@@ -15,8 +15,8 @@ collections:
         name: "index"
         delete: false
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: "Path", name: "path", widget: "hidden", default: "/indexed"}
+          - {label: "Template Key", name: "templateKey", default: "index-page"}
+          - {label: "Path", name: "path", default: "/indexed"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}          
