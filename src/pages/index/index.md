@@ -1,6 +1,6 @@
 ---
-templateKey: 'index-page'
-path: /indexed
+templateKey: index-page
+path: /index
 title: The Data Storytelling Platform
 subtitle: Put a human perspective on the data that drives your business
 ---
