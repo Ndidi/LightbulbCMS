@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>integration</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-303.000000, -2232.000000)">
+        <g id="integration" transform="translate(303.000000, 2232.000000)">
+            <path d="M50,0 C77.614,0 100,22.386 100,50 C100,77.614 77.614,100 50,100 C22.386,100 0,77.614 0,50 C0,22.386 22.386,0 50,0 Z" id="Mask" fill="#EFF4FF"></path>
+            <rect id="Rectangle-6" fill="#A3B8E5" x="25" y="25" width="50" height="50" rx="2"></rect>
+            <circle id="Oval-3" fill="#6983C0" cx="57.5" cy="50.5" r="10.5"></circle>
+            <path d="M36,40.9992543 L36,60.0009928 C36,60.5532775 36.4477153,61.0009928 37,61.0009928 C37.1960676,61.0009928 37.3878096,60.9433548 37.5513799,60.835247 L52.5514841,50.9212965 C53.01223,50.6167778 53.1388772,49.9964083 52.8343585,49.5356624 C52.7527765,49.4122264 52.6448198,49.308432 52.5182731,49.2317639 L37.5181689,40.143976 C37.0458118,39.8577992 36.4308985,40.0087282 36.1447217,40.4810854 C36.0500521,40.637345 36,40.816554 36,40.9992543 Z" id="Path-16" fill="#EFF4FF"></path>
+        </g>
+    </g>
+</svg>
