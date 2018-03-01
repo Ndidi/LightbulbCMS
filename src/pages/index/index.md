@@ -3,7 +3,6 @@ templateKey: index-page
 path: /
 title: The Data Storytelling Platform
 subtitle: Put a human perspective on the data that drives your business
-categories: "asdf, asdfas,asdfsad,asdf,asdf,asdf,asdf,asdf"
 ---
 Customer Stories
 
