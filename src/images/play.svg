@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-681.000000, -1678.000000)">
+        <g id="video-thumb" transform="translate(346.000000, 1518.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M375,240 C352.90861,240 335,222.09139 335,200 C335,177.90861 352.90861,160 375,160 C397.09139,160 415,177.90861 415,200 C415,222.09139 397.09139,240 375,240 Z M375,236 C394.882251,236 411,219.882251 411,200 C411,180.117749 394.882251,164 375,164 C355.117749,164 339,180.117749 339,200 C339,219.882251 355.117749,236 375,236 Z M392.777778,200 L362.111111,213.777778 L362.111111,186.222222 L392.777778,200 Z" id="play"></path>
+        </g>
+    </g>
+</svg>

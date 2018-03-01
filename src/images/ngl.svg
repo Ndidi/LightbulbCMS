@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>ngl</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="layout/product-home-combine" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -330.000000)">
+        <g id="ngl" transform="translate(0.000000, 330.000000)" fill="#353C45">
+            <polygon id="Path-14" fill-rule="nonzero" points="6.29289322 14.7071068 7.70710678 13.2928932 13.9368941 19.5226805 7.72974053 25.7298341 6.31552696 24.3156205 11.1084669 19.5226805"></polygon>
+            <rect id="Rectangle-31" x="16" y="29" width="9" height="2"></rect>
+            <path d="M2,2 L2,38 L38,38 L38,2 L2,2 Z M2,0 L38,0 C39.1045695,-2.02906125e-16 40,0.8954305 40,2 L40,38 C40,39.1045695 39.1045695,40 38,40 L2,40 C0.8954305,40 1.3527075e-16,39.1045695 0,38 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="Rectangle-2" fill-rule="nonzero"></path>
+            <rect id="Rectangle-4" x="1" y="7" width="37" height="2"></rect>
+        </g>
+    </g>
+</svg>

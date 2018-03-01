@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="8px" viewBox="0 0 16 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="layout/navbar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-745.000000, -36.000000)">
+        <polygon id="arrow-down" fill="#353C45" fill-rule="nonzero" points="759.418762 36.1862665 760.581238 37.8137335 753 43.2289036 745.418762 37.8137335 746.581238 36.1862665 753 40.7710964"></polygon>
+    </g>
+</svg>

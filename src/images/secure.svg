@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>secure</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Marketing-Stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-750.000000, -1503.000000)">
+        <g id="secure" transform="translate(750.000000, 1503.000000)">
+            <path d="M50,0 C77.614,0 100,22.386 100,50 C100,77.614 77.614,100 50,100 C22.386,100 0,77.614 0,50 C0,22.386 22.386,0 50,0 Z" id="Mask-Copy-2" fill="#CBCFB2"></path>
+            <rect id="Rectangle-26" fill="#85896E" x="30" y="50" width="40" height="25" rx="2.08333333"></rect>
+            <path d="M41.5789474,50 L37.3684211,50 L37.3684211,37.5 C37.3684211,30.5964406 43.0237716,25 50,25 C56.9762284,25 62.6315789,30.5964406 62.6315789,37.5 L62.6315789,50.2451917 L58.4210526,50.2451917 L58.4210526,37.5 C58.4210526,32.8976271 54.6508189,29.1666667 50,29.1666667 C45.3491811,29.1666667 41.5789474,32.8976271 41.5789474,37.5 L41.5789474,50 Z" id="Path-9" fill="#A3A78A" fill-rule="nonzero"></path>
+            <ellipse id="Oval-8" fill="#CBCFB2" cx="50" cy="62.5" rx="4.21052632" ry="4.16666667"></ellipse>
+        </g>
+    </g>
+</svg>

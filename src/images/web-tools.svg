@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>web-tools</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1037.000000, -2232.000000)">
+        <g id="web-tools" transform="translate(1037.000000, 2232.000000)">
+            <path d="M0,50 C0,22.386 22.386,0 50,0 C77.614,0 100,22.386 100,50 C100,77.614 77.614,100 50,100 C22.386,100 0,77.614 0,50" id="Mask" fill-opacity="0.88" fill="#EFF4FF"></path>
+            <path d="M22,33 L78,33 L78,72 C78,73.1045695 77.1045695,74 76,74 L24,74 C22.8954305,74 22,73.1045695 22,72 L22,33 Z" id="Rectangle-7" fill="#A3B8E5"></path>
+            <path d="M24,26 L76,26 C77.1045695,26 78,26.8954305 78,28 L78,33 L22,33 L22,28 C22,26.8954305 22.8954305,26 24,26 Z" id="Rectangle-8" fill="#6983C0"></path>
+            <circle id="Oval-5" fill="#EFF4FF" cx="25.5" cy="29.5" r="1.5"></circle>
+            <circle id="Oval-5-Copy" fill="#EFF4FF" cx="30.5" cy="29.5" r="1.5"></circle>
+            <circle id="Oval-5-Copy-2" fill="#EFF4FF" cx="35.5" cy="29.5" r="1.5"></circle>
+            <rect id="Rectangle-10" fill="#EFF4FF" x="34" y="40" width="32" height="24" rx="1"></rect>
+        </g>
+    </g>
+</svg>

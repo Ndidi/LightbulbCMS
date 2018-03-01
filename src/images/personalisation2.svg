@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>personalisation2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Customer-Stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-750.000000, -1043.000000)">
+        <g id="personalisation2" transform="translate(750.000000, 1043.000000)">
+            <path d="M50,0 C77.614,0 100,22.386 100,50 C100,77.614 77.614,100 50,100 C22.386,100 0,77.614 0,50 C0,22.386 22.386,0 50,0 Z" id="Mask" fill="#FFC4B9"></path>
+            <path d="M76,59.3658537 L72.34375,59.3658537 L72.34375,66.2439024 C72.34375,68.2644564 70.7057674,69.902439 68.6852134,69.902439 L60.15625,69.902439 L60.15625,76 L37,76 L37,44.2926829 C37.6665812,34.084476 46.1397654,26 56.5,26 C66.8602346,26 75.3334188,34.084476 75.9625332,44.2926829 L76,59.3658537 Z" id="Combined-Shape" fill="#904B3E"></path>
+            <path d="M63,59.3658537 L59.34375,59.3658537 L59.34375,66.2439024 C59.34375,68.2644564 57.7057674,69.902439 55.6852134,69.902439 L47.15625,69.902439 L47.15625,76 L24,76 L24,44.2926829 C24.6665812,34.084476 33.1397654,26 43.5,26 C53.8602346,26 62.3334188,34.084476 62.9625332,44.2926829 L63,59.3658537 Z" id="Combined-Shape-Copy" fill="#B3695C"></path>
+        </g>
+    </g>
+</svg>

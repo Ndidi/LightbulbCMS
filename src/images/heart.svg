@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="layout/footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-395.000000, -684.000000)">
+        <g id="Group-4" transform="translate(170.000000, 683.000000)" fill="#D83A51" fill-rule="nonzero">
+            <g id="Group" transform="translate(149.000000, 0.000000)">
+                <polygon id="heart" points="88.5251263 1.52512627 93.4748737 6.47487373 85 14.9497475 76.5251263 6.47487373 81.4748737 1.52512627 85 5.05025253"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

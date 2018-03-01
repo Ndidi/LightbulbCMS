@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>scale-requests</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Customer-Stories" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-170.000000, -1043.000000)">
+        <g id="scale-requests" transform="translate(170.000000, 1043.000000)">
+            <path d="M50,0 C77.614,0 100,22.386 100,50 C100,77.614 77.614,100 50,100 C22.386,100 0,77.614 0,50 C0,22.386 22.386,0 50,0 Z" id="Mask" fill="#FFC4B9"></path>
+            <rect id="Rectangle-2" fill="#B3695C" x="25" y="25" width="50" height="50" rx="2"></rect>
+            <path d="M27,25 L51,25 L51,51 L25,51 L25,27 C25,25.8954305 25.8954305,25 27,25 Z" id="Rectangle-4" fill="#904B3E"></path>
+            <path d="M64.627193,66.0414065 L52.2928932,53.7071068 L53.7071068,52.2928932 L66.0384048,64.6241912 L66.0384048,54 L68.0384048,54 L68.0384048,68.0414065 L54,68.0414065 L54,66.0414065 L64.627193,66.0414065 Z M65.9585935,66.0414065 L66.0384048,66.0414065 L66.0384048,65.9615952 L65.9585935,66.0414065 Z" id="Combined-Shape" fill="#FFC4B9" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

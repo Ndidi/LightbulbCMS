@@ -19,7 +19,9 @@ collections:
           - {label: "Path", name: "path", default: "/indexed"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}          
+          - {label: "Body", name: "body", widget: "markdown"}      
+          - {label: "Cat", name: "cat", widget: "categories"}      
+            
   - name: blog
     label: Blog
     folder: blog
