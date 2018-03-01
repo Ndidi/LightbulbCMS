@@ -8,4 +8,4 @@ Customer Stories
 
 Sales and customer success teams use Nugit to improve the value they deliver to customers. Carefully crafted data presentations that previously took days, now takes just minutes and scales from one customer story to thousands.
 
-youtube XUqRem0W8L8
+youtube Kp7eSUU9oy8
