@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const Navbar = () => (
   <div data-collapse="medium" data-animation="default" data-duration={400} data-easing="ease-in-out" data-easing2="ease-in-out" data-w-id="3c6cfdb0-ea9e-799f-4b62-af73be7456a4" className="navbar w-nav">
   <div className="container-nav w-container"><a href="index.html" className="logo-nav w-nav-brand" />
-    <nav role="navigation" className="nav-menu-container w-nav-menu"><a href="index.html" className="nav-link w-hidden-main w-nav-link">Home</a><a href="storytelling.html" className="nav-link w-nav-link">Data Storytelling Platform</a>
+    <nav role="navigation" className="nav-menu-container w-nav-menu"><a href="index.html" className="nav-link w-hidden-main w-nav-link">Home</a><a href="what-is-data-storytelling" className="nav-link w-nav-link">Data Storytelling Platform</a>
       <div data-delay={300} className="nav-link-dropdown w-dropdown">
         <div className="dropdown-toggle w-dropdown-toggle">
           <div className="arrow-down" />

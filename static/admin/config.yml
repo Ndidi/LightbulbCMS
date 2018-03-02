@@ -15,7 +15,7 @@ collections:
         name: "index"
         delete: false
         fields:
-          - {label: "Template Key", name: "templateKey", default: "index-page"}
+          - {label: "Template Key", name: "templateKey", default: "index-page", widget: hidden}
           - {label: "Path", name: "path", default: "/"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
@@ -37,14 +37,6 @@ collections:
         delete: false
         create: true
         fields:
-          - {label: "Template Key", name: "templateKey", default: "index-page"}
+          - {label: "Template Key", name: "templateKey", default: "data-storytelling-page", widget: hidden}
           - {label: "Path", name: "path", default: "/what-is-data-storytelling"}
           - {label: "Title", name: "title", widget: "string"}
-  - name: blog
-    label: Blog
-    folder: blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
