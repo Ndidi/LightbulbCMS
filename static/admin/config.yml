@@ -16,7 +16,7 @@ collections:
         delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "index-page"}
-          - {label: "Path", name: "path", default: "/indexed"}
+          - {label: "Path", name: "path", default: "/"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Video", name: "video", widget: "string"}
@@ -31,6 +31,15 @@ collections:
             fields: [{label: "Story Heading", name: "storyHeading", widget: string}, {label: "Story Body", name: "storyBody", widget: string}, {label: "Story Link", name: "storyLink", widget: "object", fields: [{label: "Link Name", name: "linkName", widget: "string"}, {label: "Link", name: "link", widget: "string"}]}]
           - {label: "Centered Text", name: "centeredText", widget: "object", fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Body", name: "body", widget: "string"}, {label: "Link", name: "link", widget: "object", fields: [{label: "Link Name", name: "linkName", widget: "string"}, {label: "Link", name: "link", widget: "string"}]}]}
           - {label: "Features", name: "features", widget: "list", fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: string}, {label: Description, name: description, widget: string}]}
+      - file: "src/pages/data-storytelling/data-storytelling.md"
+        label: "Data Storytelling"
+        name: "dataStorytelling"
+        delete: false
+        create: true
+        fields:
+          - {label: "Template Key", name: "templateKey", default: "index-page"}
+          - {label: "Path", name: "path", default: "/what-is-data-storytelling"}
+          - {label: "Title", name: "title", widget: "string"}
   - name: blog
     label: Blog
     folder: blog

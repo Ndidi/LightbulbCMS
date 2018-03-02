@@ -1,4 +1,5 @@
 const path = require("path");
+const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
@@ -33,4 +34,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       });
     });
   });
+};
+
+exports.onCreateNode = ({ node, getNode }) => {
+  if (node.internal.type === `MarkdownRemark`) {
+    console.log("Creating nodes");
+    const fileNode = getNode(node.parent)
+    console.log(`\n`, fileNode.relativePath)
+  }
 };
