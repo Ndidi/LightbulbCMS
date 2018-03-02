@@ -3,6 +3,10 @@ templateKey: index-page
 path: /
 title: The Data Storytelling Platform
 subtitle: Put a human perspective on the data that drives your business
+video:
+  poster: >-
+    https://uploads-ssl.webflow.com/5a6c0230513ec40001b64711/5a75a7ba68edf60001fec8d8_video-home-thumb.jpg
+  src: 'https://www.nugit.co/hubfs/images/app-video.mp4?t=1519961993146'
 clientLogos:
   - image: /static/assets/ibm.svg
   - image: /static/assets/samsung.svg
