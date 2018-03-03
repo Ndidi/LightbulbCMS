@@ -9,10 +9,13 @@
   },
   "dependencies": {
     "gatsby": "^1.9.215",
+    "gatsby-image": "^1.0.41",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-netlify-cms": "^1.0.10",
+    "gatsby-plugin-sharp": "^1.6.37",
     "gatsby-source-filesystem": "^1.5.24",
     "gatsby-transformer-remark": "^1.7.33",
+    "gatsby-transformer-sharp": "^1.6.22",
     "react-helmet": "^5.2.0"
   }
 }

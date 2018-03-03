@@ -61,6 +61,24 @@ export default function Template({
           <div className="lg-spacing"></div>
         </div>
       </main>
+      <section className="white-section gray">
+        <div className="container">
+          <p className="testimonial">{frontmatter.testimonial.quote}</p>
+          <div className="sm-spacing"></div>
+          <div className="flex-container center">
+            <div className="customer-avatar mahima"></div>
+            <div className="name-customer">{frontmatter.testimonial.author}</div>
+            <p className="small-copy">{frontmatter.testimonial.role}</p>
+          </div>
+        </div>
+      </section>
+      <section id="demo" className="white-section centered full-demo">
+        <div className="container demo">
+          <h2 className="h2">Experience the joy of data</h2>
+          <div className="sm-spacing _30"></div>
+          <a href="request-demo.html" className="btn w-button">Request Demo</a>
+        </div>
+      </section>
     </div>
   );
 }
@@ -86,7 +104,12 @@ export const pageQuery = graphql`
         clientLogos {
           image
         }
+        testimonial{
+          quote
+          author
+          role
         }
       }
     }
+  }
 `;

@@ -3,8 +3,7 @@ backend:
   repo: Ndidi/LightbulbCMS
 
 media_folder: static/assets
-
-publish_mode: editorial_workflow
+public_folder: /assets
 
 collections:
   - name: pages
@@ -36,6 +35,16 @@ collections:
             fields: [{label: "Story Heading", name: "storyHeading", widget: string}, {label: "Story Body", name: "storyBody", widget: string}, {label: "Story Link", name: "storyLink", widget: "object", fields: [{label: "Link Name", name: "linkName", widget: "string"}, {label: "Link", name: "link", widget: "string"}]}]
           - {label: "Centered Text", name: "centeredText", widget: "object", fields: [{label: "Heading", name: "heading", widget: "string"}, {label: "Body", name: "body", widget: "string"}, {label: "Link", name: "link", widget: "object", fields: [{label: "Link Name", name: "linkName", widget: "string"}, {label: "Link", name: "link", widget: "string"}]}]}
           - {label: "Features", name: "features", widget: "list", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Text", name: "text", widget: "string"}, {label: "Description", name: "description", widget: "string"}]}
+          - label: "Tabbed Top Features"
+            name: "tabbedTopFeatures"
+            widget: "object"
+            fields:
+              - {label: "Tab 1", name: "tab1", widget: "string"}
+              - {label: "Image 1", name: "image1", widget: "image"}
+              - {label: "Tab 2", name: "tab2", widget: "string"}
+              - {label: "Image 2", name: "image2", widget: "image"}
+              - {label: "Tab 3", name: "tab3", widget: "string"}
+              - {label: "Image 3", name: "image3", widget: "image"}              
           - label: "Testimonial"
             name: "testimonial"
             widget: "object"
@@ -43,6 +52,7 @@ collections:
               - {label: "Quote", name: "quote", widget: "string"}
               - {label: "Author", name: "author", widget: "string"}
               - {label: "Role", name: "role", widget: "string"}
+          - {label: "Full Page Message", name: "fullPageMessage", widget: "string"}
       - file: "src/pages/data-storytelling/data-storytelling.md"
         label: "Data Storytelling"
         name: "dataStorytelling"
