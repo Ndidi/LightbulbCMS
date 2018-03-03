@@ -1,4 +1,5 @@
 import React from "react";
+import Stories from "../components/Stories";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -45,28 +46,7 @@ export default function Template({
         </div>
       </section>
       <main className="white-section">
-        <div className="container grid">
-          <div className="_2cols-box">
-            <h2 className="h2">Customer Stories</h2>
-            <div className="sm-spacing"></div>
-            <p className="p">Sales and customer success teams use Nugit to improve the value they deliver to customers. Carefully crafted data presentations that previously took days, now takes just minutes and scales from one customer story to thousands.</p>
-            <div className="sm-spacing"></div>
-            <a href="customer-stories.html" className="link-text w-inline-block w-clearfix">
-              <div className="learn-more">Learn More</div>
-              <div className="arrow-right"></div>
-            </a>
-          </div>
-          <div className="_2cols-box">
-            <h2 className="h2">Marketing Stories</h2>
-            <div className="sm-spacing"></div>
-            <p className="p">Marketing and agency teams can move from dashboard overload to powerful, engaging and presentation ready stories across all of their activities, giving back ownership and control of outcomes.</p>
-            <div className="sm-spacing"></div>
-            <a href="marketing-stories.html" className="link-text w-inline-block w-clearfix">
-              <div className="learn-more">Learn More</div>
-              <div className="arrow-right"></div>
-            </a>
-          </div>
-        </div>
+        <Stories stories={frontmatter.stories}/>
         <div className="container center">
           <div className="hg-spacing"></div>
           <div className="md-spacing"></div>
