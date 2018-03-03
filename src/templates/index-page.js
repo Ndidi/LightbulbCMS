@@ -31,7 +31,7 @@ export default function Template({
             `
           }}/>
         </a>
-        <div className="video-home w-embed"><video src="http://www.hoanggiang12.com/wp-content/themes/greenwolf/images/app-video.mp4" poster="https://uploads-ssl.webflow.com/5a6c0230513ec40001b64711/5a75a7ba68edf60001fec8d8_video-home-thumb.jpg" loop autoPlay playsInline className="ignore-observer"></video></div>
+        <div className="video-home w-embed"><video src={frontmatter.video.source} poster={frontmatter.video.poster} loop autoPlay playsInline className="ignore-observer"></video></div>
       </div>
       </header>
       <section className="client-logo">
@@ -88,10 +88,13 @@ export default function Template({
 export const pageQuery = graphql`
   query Index($path: String!) {
     markdownRemark(frontmatter: {path: {eq: $path } }) {
-      html
       frontmatter {
         title
         subtitle
+        video{
+          source
+          poster
+        }
         stories {
           storyBody
           storyHeading
