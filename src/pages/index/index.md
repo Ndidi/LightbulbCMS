@@ -50,5 +50,14 @@ features:
   - description: Customised One Click Stories allows anyone to be a data storyteller.
     image: /static/assets/web-tools.svg
     text: Online Story Builder
+testimonial:
+  author: Mahima Kaur
+  quote: >-
+    "Nugit allows us to take the ownership of managing marketing for our key
+    accounts successfully; it provides good snippets of how I can tweak and fix
+    campaigns across various platforms. With an easy to understand interface, I
+    can use it effectively to understand how my budget is being spent and how I
+    can plan it better."
+  role: '- Senior Regional Digital Manager at Ogilvy'
 ---
 
