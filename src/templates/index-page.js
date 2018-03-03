@@ -1,5 +1,6 @@
 import React from "react";
 import Stories from "../components/Stories";
+import Img from "gatsby-image";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -60,6 +61,42 @@ export default function Template({
           </a>
           <div className="lg-spacing"></div>
         </div>
+        <div className="container">
+          <div className="hg-spacing"></div>
+          <h2 className="h2 fixedwidth">Top Features</h2>
+          <div className="sm-spacing"></div>
+          <p className="p fixedwidth">Complete automation of data processing, analysis, visualisation and presentation.</p>
+          <div className="md-spacing"></div>
+          <div data-easing="linear" data-duration-in="300" data-duration-out="100" className="w-tabs">
+            <div className="tabs-menu w-tab-menu">
+              <a data-w-tab="Tab 1" className="tabs-link intergrate-icon w-inline-block w-tab-link w--current">
+                <div>Combine data across up to 2,500 sources</div>
+              </a>
+              <a data-w-tab="Tab 2" className="tabs-link nlg-icon w-inline-block w-tab-link">
+                <div>Human Language Generation for greater insights &amp; clarity</div>
+              </a>
+              <a data-w-tab="Tab 3" className="tabs-link instant-icon w-inline-block w-tab-link">
+                <div>Live Stories personalised and ready to share</div>
+              </a>
+            </div>
+            <div className="tabs-content w-tab-content">
+              <div data-w-tab="Tab 1" className="tabs-pane w-tab-pane w--tab-active">
+                <Img sizes={frontmatter.tabbedTopFeatures.image1AbsolutePath.childImageSharp.sizes} className="combine-data"/>
+              </div>
+              <div data-w-tab="Tab 2" className="tabs-pane w-tab-pane w--tab-active">
+                <Img sizes={frontmatter.tabbedTopFeatures.image2AbsolutePath.childImageSharp.sizes} className="combine-data"/>
+              </div>
+              <div data-w-tab="Tab 3" className="tabs-pane w-tab-pane w--tab-active">
+                {frontmatter.tabbedTopFeatures.image3.includes(".svg") ? <img src={frontmatter.tabbedTopFeatures.image3}/> : console.log(" No SVG")}
+              </div>
+            </div>
+          </div>
+          <div className="sm-spacing _30"></div>
+          <a href="product.html" className="link-text w-inline-block w-clearfix">
+            <div className="learn-more">Learn More</div>
+            <div className="arrow-right"></div>
+          </a>
+        </div>
       </main>
       <section className="white-section gray">
         <div className="container">
@@ -84,8 +121,8 @@ export default function Template({
 }
       
 export const pageQuery = graphql`
-  query Index($path: String!) {
-    markdownRemark(frontmatter: {path: {eq: $path } }) {
+  query IndexPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
         subtitle
@@ -103,6 +140,36 @@ export const pageQuery = graphql`
         }
         clientLogos {
           image
+        }
+        fullPageMessage
+        tabbedTopFeatures {
+          image1
+          image1AbsolutePath{
+            childImageSharp {
+              sizes(maxWidth: 1000){
+                ...GatsbyImageSharpSizes_withWebp
+              }
+            }
+          }
+          image2
+          image2AbsolutePath{
+            childImageSharp {
+              sizes(maxWidth: 1000){
+                ...GatsbyImageSharpSizes_withWebp
+              }
+            }
+          }
+          image3
+          image3AbsolutePath{
+            childImageSharp {
+              sizes(maxWidth: 1000){
+                ...GatsbyImageSharpSizes_withWebp
+              }
+            }
+          }
+          tab1
+          tab2
+          tab3
         }
         testimonial{
           quote

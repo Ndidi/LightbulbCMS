@@ -39,3 +39,20 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     });
   });
 };
+
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+  const { createNodeField } = boundActionCreators
+ 
+  if (node.internal.type === `MarkdownRemark` && node.id.includes("index.md")){
+    addPathForImage(node, node.frontmatter.tabbedTopFeatures, "image1")
+    addPathForImage(node, node.frontmatter.tabbedTopFeatures, "image2")
+    addPathForImage(node, node.frontmatter.tabbedTopFeatures, "image3")
+  }
+}
+
+addPathForImage = (node, theParent, theChild) =>{
+  theParent[theChild+"AbsolutePath"] = path.relative(
+    path.dirname(node.fileAbsolutePath),
+    path.join(__dirname, '/static/', theParent[theChild])
+  )
+}
