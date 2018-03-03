@@ -50,6 +50,13 @@ features:
   - description: Customised One Click Stories allows anyone to be a data storyteller.
     image: /static/assets/web-tools.svg
     text: Online Story Builder
+tabbedTopFeatures:
+  image1: /assets/image1.png
+  image2: /assets/image2.png
+  image3: /assets/image3.svg
+  tab1: 'Combine data across up to 2,500 sources'
+  tab2: Human Language Generation for greater insights & clarity
+  tab3: Live Stories personalised and ready to share
 testimonial:
   author: Mahima Kaur
   quote: >-
@@ -59,5 +66,6 @@ testimonial:
     can use it effectively to understand how my budget is being spent and how I
     can plan it better."
   role: '- Senior Regional Digital Manager at Ogilvy'
+fullPageMessage: Experience the joy of data
 ---
 
