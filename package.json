@@ -1,5 +1,5 @@
 {
-  "name": "Lightbulb CMS",
+  "name": "lightbulb-cms",
   "description": "CMS backing Lightbuld.co",
   "license": "MIT",
   "scripts": {
