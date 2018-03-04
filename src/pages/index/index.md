@@ -18,17 +18,11 @@ stories:
       took days, now takes just minutes and scales from one customer story to
       thousands.
     storyHeading: Customer Stories
-    storyLink:
-      link: /customer-stories
-      linkName: Learn More
   - storyBody: >-
       Marketing and agency teams can move from dashboard overload to powerful,
       engaging and presentation ready stories across all of their activities,
       giving back ownership and control of outcomes.
     storyHeading: Marketing Stories
-    storyLink:
-      link: /marketing-stories
-      linkName: Learn More
 centeredText:
   body: >-
     Nugit’s platform goes beyond just presenting data by adding context &
@@ -54,6 +48,10 @@ tabbedTopFeatures:
   image1: /assets/image1.png
   image2: /assets/image2.png
   image3: /assets/image3.svg
+  title: Top Features
+  subtitle: >-
+    Complete automation of data processing, analysis, visualisation and
+    presentation.
   tab1: 'Combine data across up to 2,500 sources'
   tab2: Human Language Generation for greater insights & clarity
   tab3: Live Stories personalised and ready to share
