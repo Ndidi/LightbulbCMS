@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import './normalize.css'
 import './webflow.css'
 import './nugit.css'
+import './header.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
