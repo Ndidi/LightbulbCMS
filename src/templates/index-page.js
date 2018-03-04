@@ -70,24 +70,24 @@ export default function Template({
           <div data-easing="linear" data-duration-in="300" data-duration-out="100" className="w-tabs">
             <div className="tabs-menu w-tab-menu">
               <a data-w-tab="Tab 1" className="tabs-link intergrate-icon w-inline-block w-tab-link w--current">
-                <div>Combine data across up to 2,500 sources</div>
+                <div>{frontmatter.tabbedTopFeatures.tab1}</div>
               </a>
               <a data-w-tab="Tab 2" className="tabs-link nlg-icon w-inline-block w-tab-link">
-                <div>Human Language Generation for greater insights &amp; clarity</div>
+                <div>{frontmatter.tabbedTopFeatures.tab2}</div>
               </a>
               <a data-w-tab="Tab 3" className="tabs-link instant-icon w-inline-block w-tab-link">
-                <div>Live Stories personalised and ready to share</div>
+                <div>{frontmatter.tabbedTopFeatures.tab3}</div>
               </a>
             </div>
             <div className="tabs-content w-tab-content">
               <div data-w-tab="Tab 1" className="tabs-pane w-tab-pane w--tab-active">
-                <Img sizes={frontmatter.tabbedTopFeatures.image1AbsolutePath.childImageSharp.sizes} className="combine-data"/>
+                {frontmatter.tabbedTopFeatures.image1.includes(".svg") ? <img src={frontmatter.tabbedTopFeatures.image1} className="combine-data"/> : <Img sizes={frontmatter.tabbedTopFeatures.image1AbsolutePath.childImageSharp.sizes} className="combine-data"/>}
               </div>
               <div data-w-tab="Tab 2" className="tabs-pane w-tab-pane w--tab-active">
-                <Img sizes={frontmatter.tabbedTopFeatures.image2AbsolutePath.childImageSharp.sizes} className="combine-data"/>
+                {frontmatter.tabbedTopFeatures.image2.includes(".svg") ? <img src={frontmatter.tabbedTopFeatures.image2} className="combine-data"/> : <Img sizes={frontmatter.tabbedTopFeatures.image2AbsolutePath.childImageSharp.sizes} className="combine-data"/>}
               </div>
               <div data-w-tab="Tab 3" className="tabs-pane w-tab-pane w--tab-active">
-                {frontmatter.tabbedTopFeatures.image3.includes(".svg") ? <img src={frontmatter.tabbedTopFeatures.image3}/> : console.log(" No SVG")}
+                {frontmatter.tabbedTopFeatures.image3.includes(".svg") ? <img src={frontmatter.tabbedTopFeatures.image3} className="combine-data"/> : <Img sizes={frontmatter.tabbedTopFeatures.image3AbsolutePath.childImageSharp.sizes} className="combine-data"/>}
               </div>
             </div>
           </div>
