@@ -1,5 +1,6 @@
 import React from "react";
 import Stories from "../components/Stories";
+import FeatureBoxes from "../components/FeatureBoxes";
 import Img from "gatsby-image";
 
 export default function Template({
@@ -61,11 +62,12 @@ export default function Template({
           </a>
           <div className="lg-spacing"></div>
         </div>
+        <FeatureBoxes features={frontmatter.features} />
         <div className="container">
           <div className="hg-spacing"></div>
-          <h2 className="h2 fixedwidth">Top Features</h2>
+          <h2 className="h2 fixedwidth">{frontmatter.title}</h2>
           <div className="sm-spacing"></div>
-          <p className="p fixedwidth">Complete automation of data processing, analysis, visualisation and presentation.</p>
+          <p className="p fixedwidth">{frontmatter.subtitle}</p>
           <div className="md-spacing"></div>
           <div data-easing="linear" data-duration-in="300" data-duration-out="100" className="w-tabs">
             <div className="tabs-menu w-tab-menu">
@@ -141,7 +143,11 @@ export const pageQuery = graphql`
         clientLogos {
           image
         }
-        fullPageMessage
+        features {
+          description
+          image
+          text
+        }
         tabbedTopFeatures {
           image1
           image1AbsolutePath{
