@@ -29,9 +29,6 @@ centeredText:
     narrative, so your audience can connect the dots & see the opportunities
     that matter.
   heading: Move from Dashboards to Data Storytelling
-  link:
-    link: /product
-    linkName: Learn More
 features:
   - description: Connect data from 25 direct integrations or upload via CSV.
     image: /static/assets/integration.svg
