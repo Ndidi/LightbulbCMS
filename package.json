@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "Lightbulb CMS",
+  "description": "CMS backing Lightbuld.co",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

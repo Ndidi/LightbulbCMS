@@ -111,7 +111,7 @@ export default function Template({
       </section>
       <section id="demo" className="white-section centered full-demo">
         <div className="container demo">
-          <h2 className="h2">Experience the joy of data</h2>
+          <h2 className="h2">{frontmatter.fullPageMessage}</h2>
           <div className="sm-spacing _30"></div>
           <a href="request-demo.html" className="btn w-button">Request Demo</a>
         </div>
@@ -176,6 +176,7 @@ export const pageQuery = graphql`
           author
           role
         }
+        fullPageMessage
       }
     }
   }
