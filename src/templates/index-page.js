@@ -89,13 +89,13 @@ export const IndexPageTemplate = ({
           </div>
           <div className="tabs-content w-tab-content">
             <div data-w-tab="Tab 1" className="tabs-pane w-tab-pane w--tab-active">
-              {tabbedTopFeatures.image1.includes(".svg") ? <img src={tabbedTopFeatures.image1} className="combine-data"/> : <Img sizes={tabbedTopFeatures.image1AbsolutePath.childImageSharp.sizes} className="combine-data"/>}
+              {(tabbedTopFeatures.image1AbsolutePath && tabbedTopFeatures.image1AbsolutePath.childImageSharp) ? <Img sizes={tabbedTopFeatures.image1AbsolutePath.childImageSharp.sizes} className="combine-data"/> : <img src={tabbedTopFeatures.image1} className="combine-data"/>}
             </div>
             <div data-w-tab="Tab 2" className="tabs-pane w-tab-pane w--tab-active">
-              {tabbedTopFeatures.image2.includes(".svg") ? <img src={tabbedTopFeatures.image2} className="combine-data"/> : <Img sizes={tabbedTopFeatures.image2AbsolutePath.childImageSharp.sizes} className="combine-data"/>}
+              {(tabbedTopFeatures.image2AbsolutePath && tabbedTopFeatures.image2AbsolutePath.childImageSharp) ? <Img sizes={tabbedTopFeatures.image2AbsolutePath.childImageSharp.sizes} className="combine-data"/> : <img src={tabbedTopFeatures.image2} className="combine-data"/>}
             </div>
             <div data-w-tab="Tab 3" className="tabs-pane w-tab-pane w--tab-active">
-              {tabbedTopFeatures.image3.includes(".svg") ? <img src={tabbedTopFeatures.image3} className="combine-data"/> : <Img sizes={tabbedTopFeatures.image3AbsolutePath.childImageSharp.sizes} className="combine-data"/>}
+              {(tabbedTopFeatures.image3AbsolutePath && tabbedTopFeatures.image3AbsolutePath.childImageSharp) ? <Img sizes={tabbedTopFeatures.image3AbsolutePath.childImageSharp.sizes} className="combine-data"/> : <img src={tabbedTopFeatures.image3} className="combine-data"/>}
             </div>
           </div>
         </div>
