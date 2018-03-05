@@ -30,10 +30,11 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
           {this.props.headComponents}
           {css}
         </head>
-        <body {...this.props.bodyAttributes}>
+        <body {...this.props.bodyAttributes} className="body">
           {this.props.preBodyComponents}
           <div
             key={`body`}
