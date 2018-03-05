@@ -6,7 +6,7 @@ const IndexPagePreview = ({entry}) => {
   const stories = entryStories ? entryStories.toJS() : []
   
   const entryFeatures = entry.getIn(['data', 'features'])
-  const features = entryStories ? entryStories.toJS() : []
+  const features = entryFeatures ? entryFeatures.toJS() : []
 
   return(
     <IndexPageTemplate
