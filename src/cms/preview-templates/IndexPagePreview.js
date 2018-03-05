@@ -8,9 +8,6 @@ const IndexPagePreview = ({entry}) => {
   const entryFeatures = entry.getIn(['data', 'features'])
   const features = entryStories ? entryStories.toJS() : []
 
-  console.log("shit")
-  console.log(entry)
-
   return(
     <IndexPageTemplate
       title={entry.getIn(['data', 'title'])}
@@ -34,10 +31,7 @@ const IndexPagePreview = ({entry}) => {
         image3: entry.getIn(['data', 'tabbedTopFeatures', 'image3']),
         tab1: entry.getIn(['data', 'tabbedTopFeatures', 'tab1']),
         tab2: entry.getIn(['data', 'tabbedTopFeatures', 'tab2']),
-        tab3: entry.getIn(['data', 'tabbedTopFeatures', 'tab3']),
-        image1AbsolutePath: entry.getIn(['data', 'tabbedTopFeatures', 'image1AbsolutePath']),
-        image2AbsolutePath: entry.getIn(['data', 'tabbedTopFeatures', 'image2AbsolutePath']),
-        image3AbsolutePath: entry.getIn(['data', 'tabbedTopFeatures', 'image3AbsolutePath'])
+        tab3: entry.getIn(['data', 'tabbedTopFeatures', 'tab3'])
       }}
       testimonial={{
         quote: entry.getIn(['data', 'testimonial', 'quote']),
