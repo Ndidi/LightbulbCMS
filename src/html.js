@@ -41,7 +41,7 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+          <script src={withPrefix('/jquery-220.min.js')} type="text/javascript"></script>
           <script src={withPrefix('/webflow.js')} type="text/javascript"></script>
         </body>
       </html>
