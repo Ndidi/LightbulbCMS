@@ -64,3 +64,14 @@ collections:
           - {label: "Template Key", name: "templateKey", default: "data-storytelling-page", widget: hidden}
           - {label: "Path", name: "path", default: "/what-is-data-storytelling"}
           - {label: "Title", name: "title", widget: "string"}
+      - file: "src/pages/request-demo/request-demo.md"
+        label: "Request Demo"
+        name: "request-demo"
+        delete: false
+        fields:
+          - {label: "Template Key", name: "templateKey", default: "request-demo-page", widget: hidden}
+          - {label: "Path", name: "path", default: "/request-demo"}
+          - {label: "Blurb", name: "blurb", widget: "string"}
+          - {label: "Detail1", name: "detail1", widget: "string"}
+          - {label: "Detail2", name: "detail2", widget: "string"}
+          - {label: "Detail3", name: "detail3", widget: "string"}

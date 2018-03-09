@@ -31,6 +31,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
+        layout: edge.node.frontmatter.path.match(/^\/request-demo/) ? 'noNav' : 'index',
         // additional data can be passed via context
         context: {
           id

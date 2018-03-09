@@ -12,7 +12,7 @@ const Navbar = () => (
         </div>
         <nav className="dropdown-list-bg w-dropdown-list"><a href="marketing-stories.html" className="dropdown-menu w-dropdown-link">Marketing Stories</a><a href="customer-stories.html" className="dropdown-menu w-dropdown-link">Customer Stories</a></nav>
       </div><a href="product" className="nav-link w-nav-link">Product</a><a href="about" className="nav-link w-nav-link">About</a><a href="http://app.nugit.co/" target="_blank" className="nav-link w-hidden-main w-nav-link">Login</a></nav>
-    <div className="cta-nav"><a href="http://app.nugit.co/" target="_blank" className="nav-link w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Login</a><a href="request-demo.html" className="btn normal w-hidden-medium w-hidden-small w-hidden-tiny w-button">Request Demo</a>
+    <div className="cta-nav"><a href="http://app.nugit.co/" target="_blank" className="nav-link w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Login</a><a href="request-demo" className="btn normal w-hidden-medium w-hidden-small w-hidden-tiny w-button">Request Demo</a>
       <div className="w-embed" />
     </div>
     <div className="mobile-menu-icon w-nav-button">

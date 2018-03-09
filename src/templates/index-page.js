@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
       <div className="hero">{title}</div>
       <div className="sm-spacing _30"></div>
       <div>{subtitle}</div>
-      <div className="sm-spacing _30"></div><a href="request-demo.html" className="btn w-button">Request Demo</a>
+      <div className="sm-spacing _30"></div><a href="request-demo" className="btn w-button">Request Demo</a>
       <a href="#" className="btn outline icon w-inline-block w-lightbox">
         <div>What Is Nugit</div>
         <script type="application/json" className="w-json"
@@ -121,7 +121,7 @@ export const IndexPageTemplate = ({
       <div className="container demo">
         <h2 className="h2">{fullPageMessage}</h2>
         <div className="sm-spacing _30"></div>
-        <a href="request-demo.html" className="btn w-button">Request Demo</a>
+        <a href="request-demo" className="btn w-button">Request Demo</a>
       </div>
     </section>
   </div>
