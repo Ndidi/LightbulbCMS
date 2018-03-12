@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "gatsby-link";
 
 function encode(data) {
   return Object.keys(data)
@@ -16,6 +17,9 @@ export class RequestDemoPageTemplate extends React.Component {
       phoneNumber: "",
       company: ""
     };
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange = (e) => {
@@ -28,8 +32,11 @@ export class RequestDemoPageTemplate extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "request-demo", ...this.state })
     })
-      // .then(() => console.log("Success"))
-      // .catch(error => alert(error));
+      .then(() => console.log("Success"))
+      .catch(error => alert(error));
+
+      e.preventDefault();
+
   };
 
   goBack = () => {
