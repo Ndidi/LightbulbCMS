@@ -9,7 +9,13 @@ export class RequestDemoPageTemplate extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      firstname = "",
+      lastname= "",
+      email = "",
+      phoneNumber = "",
+      company = ""
+    };
   }
 
   handleChange = (e) => {
@@ -31,6 +37,8 @@ export class RequestDemoPageTemplate extends React.Component {
   }
 
   render(){
+    const { firstname, lastname, email, phoneNumber, company} = this.state;
+
     return( 
       <div>
         <div data-w-id="bc951fdc-d87d-de3a-2fb5-04ecb418b5c9" 
@@ -67,7 +75,7 @@ export class RequestDemoPageTemplate extends React.Component {
                 </div>
                 <div id="phone-number">
                   <label>Phone Number*</label>
-                  <input type="text" name="number" value={number} onChange={this.handleChange}/>
+                  <input type="text" name="phoneNumber" value={phoneNumber} onChange={this.handleChange}/>
                 </div>
                 <div id="company-name">
                   <label>Company Name*</label>
