@@ -13,15 +13,32 @@ export const RequestDemoPageTemplate = ({
         <div className="form-hubspot">
           <div className="hero nofixedwidth">Talk to us</div>
           <div className="sm-spacing"></div>
-          <div className="w-embed w-script">
-            <script dangerouslySetInnerHTML={{__html:`
-              hbspt.forms.create({
-                portalId: '1859491',
-                formId: 'c7f798d4-0359-4672-8516-ee8928d14e3a',
-                css: ''
-              });
-            `}}/>
-          </div>
+          <form name="request-demo" method="POST" netlify>
+            <div id="first-name">
+              <label>First Name*</label>
+              <input type="text" />
+            </div>
+            <div id="last-name">
+              <label>Last Name*</label>
+              <input type="text" />
+            </div>
+            <div id="business-email">
+              <label>Business Email*</label>
+              <input type="text" />
+            </div>
+            <div id="phone-number">
+              <label>Phone Number*</label>
+              <input type="text" />
+            </div>
+            <div id="company-name">
+              <label>Company Name*</label>
+              <input type="text" />
+            </div>
+            <div id="country">
+              <label>Country*</label>
+              <select/>
+            </div>
+          </form>
         </div>
       </div>
       <div className="request-demo-content">
