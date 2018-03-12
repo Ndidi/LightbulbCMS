@@ -38,6 +38,7 @@ export const RequestDemoPageTemplate = ({
               <label>Country*</label>
               <select/>
             </div>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>
