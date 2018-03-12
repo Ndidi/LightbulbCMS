@@ -6,6 +6,7 @@ import './normalize.css'
 import './webflow.css'
 import './nugit.css'
 import './header.css'
+import './chosen.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
