@@ -52,26 +52,26 @@ export class RequestDemoPageTemplate extends React.Component {
                 onSubmit={this.handleSubmit}>
                 <div id="first-name">
                   <label>First Name*</label>
-                  <input type="text"onChange={this.handleChange} />
+                  <input type="text" name="firstname" value={firstname} onChange={this.handleChange} />
                 </div>
                 <div id="last-name">
                   <label>Last Name*</label>
-                  <input type="text" onChange={this.handleChange}/>
+                  <input type="text" name="lastname" value={lastname} onChange={this.handleChange}/>
                 </div>
                 <div id="business-email">
                   <label>Business Email*</label>
-                  <input type="text" onChange={this.handleChange}/>
+                  <input type="email" name="email" value={email} onChange={this.handleChange}/>
                 </div>
                 <div className="hidden">
                   <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
                 </div>
                 <div id="phone-number">
                   <label>Phone Number*</label>
-                  <input type="text" onChange={this.handleChange}/>
+                  <input type="text" name="number" value={number} onChange={this.handleChange}/>
                 </div>
                 <div id="company-name">
                   <label>Company Name*</label>
-                  <input type="text" onChange={this.handleChange}/>
+                  <input type="text" name="company" value={company} onChange={this.handleChange}/>
                 </div>
                 <div id="country">
                   <label>Country*</label>
