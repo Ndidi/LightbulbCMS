@@ -10,11 +10,11 @@ export class RequestDemoPageTemplate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstname = "",
-      lastname= "",
-      email = "",
-      phoneNumber = "",
-      company = ""
+      firstname: "",
+      lastname: "",
+      email: "",
+      phoneNumber: "",
+      company: ""
     };
   }
 
