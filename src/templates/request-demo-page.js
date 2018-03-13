@@ -32,10 +32,6 @@ export class RequestDemoPageTemplate extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "request-demo", ...this.state })
     })
-      .then(() => console.log(this.state))
-      .catch(error => alert(error));
-
-      // e.preventDefault();
   };
 
   goBack = () => {
