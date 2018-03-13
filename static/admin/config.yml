@@ -84,3 +84,20 @@ collections:
           - {label: "Path", name: "path", default: "/thank-you", widget: hidden}
           - {label: "Title", name: "title", default: "Thanks for reaching out to us!"}
           - {label: "Subtitle", name: "subtitle", default: "One of our friendly Account Executives will be in touch with you shortly."}
+  - name: sections
+    label: Sections
+    files:
+      - file: "src/layouts/standard-layout/standard-layout.md"
+        label: "Standard Layout"
+        name: "standard-Layout"
+        fields:
+          - {label: "Template Key", name: "templateKey", default: "standard-layout", widget: hidden}
+          - label: "NavBar"
+            name: "navBar"
+            widget: "list"
+            fields:
+              - label: "Nav Item"
+                name: "navItem"
+                widget: "list"
+                fields:
+                  - {label: "Text", name: "text", widget: "string"}

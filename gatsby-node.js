@@ -1,5 +1,25 @@
 const path = require("path");
 
+exports.createLayouts = ({ boundActionCreators, graphql }) => {
+  return graphql(`
+    {
+      allMarkdownRemark(
+        filter: {id: {regex: "/src\/layouts/"}}
+      ) {
+        edges {
+          node {
+            id
+            fileAbsolutePath
+            frontmatter {
+              templateKey
+            }
+          }
+        }
+      }
+    }
+  `)
+}
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
@@ -7,6 +27,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     {
       allMarkdownRemark(
         limit: 1000
+        filter: {id: {regex: "/src\/pages/"}}
       ) {
         edges {
           node {
