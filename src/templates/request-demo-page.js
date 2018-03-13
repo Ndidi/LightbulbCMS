@@ -32,11 +32,10 @@ export class RequestDemoPageTemplate extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "request-demo", ...this.state })
     })
-      .then(() => console.log("Success"))
+      .then(() => console.log(this.state))
       .catch(error => alert(error));
 
-      e.preventDefault();
-
+      // e.preventDefault();
   };
 
   goBack = () => {
@@ -61,7 +60,7 @@ export class RequestDemoPageTemplate extends React.Component {
               <form 
                 name="request-demo"
                 method="POST"
-                action="/thank-you/"
+                action="/thank-you"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}>

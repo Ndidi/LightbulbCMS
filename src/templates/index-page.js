@@ -14,7 +14,8 @@ export const IndexPageTemplate = ({
   tabbedTopFeatures,
   testimonial,
   fullPageMessage
-}) => (
+}) => {
+  return (
   <div>
     <header className="main-header">
     <div className="container">
@@ -125,7 +126,8 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-)
+  )
+}
 
 export default ({ data }) => {
   const { frontmatter } = data.markdownRemark

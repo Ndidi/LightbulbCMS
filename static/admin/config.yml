@@ -66,7 +66,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
       - file: "src/pages/request-demo/request-demo.md"
         label: "Request Demo"
-        name: "request-demo"
+        name: "requestDemo"
         delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "request-demo-page", widget: hidden}
@@ -76,11 +76,11 @@ collections:
           - {label: "Detail2", name: "detail2", widget: "string"}
           - {label: "Detail3", name: "detail3", widget: "string"}
       - file: "src/pages/thank-you/thank-you.md"
-        label: Thank You
-        name: thankYou
+        label: "Thank You"
+        name: "thankYou"
         delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "thank-you-page", widget: hidden}
-          - {label: "Path", name: "path", default: "/thank-you", , widget: hidden}
+          - {label: "Path", name: "path", default: "/thank-you", widget: hidden}
           - {label: "Title", name: "title", default: "Thanks for reaching out to us!"}
           - {label: "Subtitle", name: "subtitle", default: "One of our friendly Account Executives will be in touch with you shortly."}

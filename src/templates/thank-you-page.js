@@ -1,10 +1,7 @@
 import React from "react";
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data; // data.markdownRemark holds our post data
-  const { frontmatter, html } = markdownRemark;
+export const ThankYouTemplate = ({
+}) => {
   
   const goBack = () => {
     console.log(history)
@@ -24,10 +21,17 @@ export default function Template({
   );
 }
 
-export const pageQuery = graphql`
+export default ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+
+  return (
+    <ThankYouTemplate />
+  )
+}
+
+export const thankYouPageQuery = graphql`
   query ThankYou($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
       frontmatter {
         path
       }
