@@ -32,6 +32,34 @@ export class RequestDemoPageTemplate extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "request-demo", ...this.state })
     })
+    .then(response => {
+      // response from server
+      // here you can check status of response and handle it manually
+      switch (response.status) {
+        case 500: console.error('Some server error'); break;
+        case 401: console.error('Unauthorized'); break;
+        // ...
+      }
+      // or you can check if status in the range 200 to 299
+      if (response.ok) {
+        return response;
+      } else {
+        // push error further for the next `catch`, like
+        return Promise.reject(response);
+        // or another way
+        throw Error(response.statusText);
+      }
+    })
+    .catch(error => {
+      console.log("Caught:", error)
+      // here you will get only Fetch API errors and those you threw or rejected above
+      // in most cases Fetch API error will look like common Error object
+      // {
+      //   name: "TypeError",
+      //   message: "Failed to fetch",
+      //   stack: ...
+      // }
+    })
   };
 
   goBack = () => {
@@ -56,7 +84,7 @@ export class RequestDemoPageTemplate extends React.Component {
               <form 
                 name="request-demo"
                 method="POST"
-                action="thank-you"
+                action="/thanks/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}>
