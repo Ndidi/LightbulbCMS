@@ -84,7 +84,7 @@ export class RequestDemoPageTemplate extends React.Component {
               <form 
                 name="request-demo"
                 method="POST"
-                action="/thanks/"
+                action="/thank-you/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}>
