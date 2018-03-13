@@ -92,12 +92,15 @@ collections:
         name: "standard-Layout"
         fields:
           - {label: "Template Key", name: "templateKey", default: "standard-layout", widget: hidden}
-          - label: "NavBar"
-            name: "navBar"
+          - label: "Navbar Items"
+            name: "navBarItems"
             widget: "list"
             fields:
-              - label: "Nav Item"
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "href", name: "href", widget: "string"}
+              - label: "SubItems"
                 name: "navItem"
                 widget: "list"
                 fields:
                   - {label: "Text", name: "text", widget: "string"}
+                  - {label: "href", name: "href", widget: "string"}
