@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "gatsby-link";
+import { Redirect } from 'react-router';
 
 function encode(data) {
   return Object.keys(data)
@@ -15,7 +16,8 @@ export class RequestDemoPageTemplate extends React.Component {
       lastname: "",
       email: "",
       phoneNumber: "",
-      company: ""
+      company: "",
+      fireRedirect: false
     };
 
     this.handleChange = this.handleChange.bind(this)
@@ -33,34 +35,9 @@ export class RequestDemoPageTemplate extends React.Component {
       body: encode({ "form-name": "request-demo", ...this.state })
     })
     .then(response => {
-      console.log(response)
-      // response from server
-      // here you can check status of response and handle it manually
-      switch (response.status) {
-        case 500: console.error('Some server error'); break;
-        case 401: console.error('Unauthorized'); break;
-        // ...
-      }
-      // or you can check if status in the range 200 to 299
-      if (response.ok) {
-        return response;
-      } else {
-        // push error further for the next `catch`, like
-        return Promise.reject(response);
-        // or another way
-        throw Error(response.statusText);
-      }
+      this.setState({ fireRedirect: true })
     })
-    .catch(error => {
-      console.log("Caught:", error)
-      // here you will get only Fetch API errors and those you threw or rejected above
-      // in most cases Fetch API error will look like common Error object
-      // {
-      //   name: "TypeError",
-      //   message: "Failed to fetch",
-      //   stack: ...
-      // }
-    })
+    e.preventDefault()
   };
 
   goBack = () => {
@@ -68,10 +45,12 @@ export class RequestDemoPageTemplate extends React.Component {
   }
 
   render(){
-    const { firstname, lastname, email, phoneNumber, company} = this.state;
-
+    const { firstname, lastname, email, phoneNumber, company, fireRedirect} = this.state;
     return( 
       <div>
+        {fireRedirect && (
+          <Redirect to="/thank-you"/>
+        )}
         <div data-w-id="bc951fdc-d87d-de3a-2fb5-04ecb418b5c9" 
           className="go-back w-embed">
           {/* style={{-webkit-transform:translateX(0) translateY(-100PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0), -moz-transform:translateX(0) translateY(-100PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0),-ms-transform:translateX(0) translateY(-100PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0),transform:translateX(0) translateY(-100PX) translateZ(0) scaleX(1) scaleY(1) scaleZ(1) rotateX(0) rotateY(0) rotateZ(0) skewX(0) skewY(0)}} className="go-back w-embed"> */}
