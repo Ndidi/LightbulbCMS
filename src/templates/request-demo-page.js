@@ -33,6 +33,7 @@ export class RequestDemoPageTemplate extends React.Component {
       body: encode({ "form-name": "request-demo", ...this.state })
     })
     .then(response => {
+      console.log(response)
       // response from server
       // here you can check status of response and handle it manually
       switch (response.status) {
