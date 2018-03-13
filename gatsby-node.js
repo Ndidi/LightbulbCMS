@@ -1,6 +1,7 @@
 const path = require("path");
 
 exports.createLayouts = ({ boundActionCreators, graphql }) => {
+  const { createLayout } = boundActionCreators;
   return graphql(`
     {
       allMarkdownRemark(
@@ -18,6 +19,23 @@ exports.createLayouts = ({ boundActionCreators, graphql }) => {
       }
     }
   `)
+  .then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors);
+    }
+
+    result.data.allMarkdownRemark.edges.forEach(edge => {
+      const id = edge.node.id
+      createLayout({
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+        ),
+        context: {
+          id
+        }
+      })
+    })
+  })
 }
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
@@ -52,7 +70,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
-        layout: edge.node.frontmatter.path.match(/^\/request-demo|thank-you/) ? 'noNav' : 'index',
+        layout: edge.node.frontmatter.path.match(/^\/request-demo|thank-you/) ? 'noNav' : 'standard-layout',
         // additional data can be passed via context
         context: {
           id
