@@ -7,5 +7,11 @@ navBarItems:
     text: Product
   - href: /about
     text: About
+  - navItem:
+      - href: /marketing-stories
+        text: Marketing Stories
+      - href: /customer-stories
+        text: Customer Stories
+    text: Solutions
 ---
 
