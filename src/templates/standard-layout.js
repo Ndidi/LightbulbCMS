@@ -23,9 +23,25 @@ export default function TemplateWrapper ({
         <div className="container-nav w-container"><a href="index" className="logo-nav w-nav-brand" />
           <nav role="navigation" className="nav-menu-container w-nav-menu"><a href="index" className="nav-link w-hidden-main w-nav-link">Home</a>
           
-            {frontmatter.navBarItems.map(item => (
-              <a href={item.href} key={item.href} className="nav-link w-nav-link">{item.text}</a>
-            ))}
+            {frontmatter.navBarItems.map(item => {
+              if (item.href){
+                return <a href={item.href} key={item.text} className="nav-link w-nav-link">{item.text}</a>
+              } else {
+                return (
+                  <div key={item.text} data-delay={300} className="nav-link-dropdown w-dropdown">
+                    <div className="dropdown-toggle w-dropdown-toggle">
+                      <div className="arrow-down" />
+                      <div>{item.text}</div>
+                    </div>
+                    <nav className="dropdown-list-bg w-dropdown-list">
+                      {/* {item.navItem.map(subItems => (
+                        <a href={subItems.href} key={item.text} className="dropdown-menu w-dropdown-link">{subItems.text}</a>
+                      ))} */}
+                    </nav>
+                  </div>
+                )
+              }
+            })}
             {/* <a href="what-is-data-storytelling" className="nav-link w-nav-link">Data Storytelling Platform</a>
             <div data-delay={300} className="nav-link-dropdown w-dropdown">
               <div className="dropdown-toggle w-dropdown-toggle">
