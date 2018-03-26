@@ -34,28 +34,14 @@ export default function TemplateWrapper ({
                       <div>{item.text}</div>
                     </div>
                     <nav className="dropdown-list-bg w-dropdown-list">
-                      {/* {item.navItem.map(subItems => (
-                        <a href={subItems.href} key={item.text} className="dropdown-menu w-dropdown-link">{subItems.text}</a>
-                      ))} */}
+                      {item.navItem.map(subItems => (
+                        <a href={subItems.href} key={subItems.text} className="dropdown-menu w-dropdown-link">{subItems.text}</a>
+                      ))}
                     </nav>
                   </div>
                 )
               }
             })}
-            {/* <a href="what-is-data-storytelling" className="nav-link w-nav-link">Data Storytelling Platform</a>
-            <div data-delay={300} className="nav-link-dropdown w-dropdown">
-              <div className="dropdown-toggle w-dropdown-toggle">
-                <div className="arrow-down" />
-                <div>Solutions</div>
-              </div>
-              <nav className="dropdown-list-bg w-dropdown-list">
-                <a href="marketing-stories.html" className="dropdown-menu w-dropdown-link">Marketing Stories</a>
-                <a href="customer-stories.html" className="dropdown-menu w-dropdown-link">Customer Stories</a>
-              </nav>
-            </div>
-            <a href="product" className="nav-link w-nav-link">Product</a>
-            <a href="about" className="nav-link w-nav-link">About</a> */}
-
             <a href="http://app.nugit.co/" target="_blank" className="nav-link w-hidden-main w-nav-link">Login</a></nav>
           <div className="cta-nav"><a href="http://app.nugit.co/" target="_blank" className="nav-link w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Login</a><a href="request-demo" className="btn normal w-hidden-medium w-hidden-small w-hidden-tiny w-button">Request Demo</a>
             <div className="w-embed" />
@@ -83,6 +69,10 @@ export const pageQuery = graphql`
         navBarItems {
           href
           text
+          navItem {
+            href
+            text
+          }
         }
       }
     }
