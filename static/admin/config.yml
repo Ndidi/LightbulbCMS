@@ -84,6 +84,34 @@ collections:
           - {label: "Path", name: "path", default: "/thank-you", widget: hidden}
           - {label: "Title", name: "title", default: "Thanks for reaching out to us!"}
           - {label: "Subtitle", name: "subtitle", default: "One of our friendly Account Executives will be in touch with you shortly."}
+      - file: "src/pages/product/product.md"
+        label: "Product"
+        name: "product"
+        delete: false
+        fields:
+          - {label: "Template Key", name: "templateKey", default: "product-page", widget: hidden}
+          - {label: "Path", name: "path", default: "/product", widget: hidden}
+          - {label: "Title", name: "title"}
+          - {label: "Subtitle", name: "subtitle"}
+          - label: "Image and Text"
+            name: "imageText"
+            widget: "object"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Text", name: "text", widget: "string"}
+          - label: "Text and Image"
+            name: "textImage"
+            widget: "object"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Centered Content"
+            name: "centeredContent"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title"}
+              - {label: "Subtitle", name: "subtitle"}
+              - {label: "Image", name: "image", widget: "image"}
   - name: sections
     label: Sections
     files:
