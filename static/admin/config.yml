@@ -112,6 +112,27 @@ collections:
               - {label: "Title", name: "title"}
               - {label: "Subtitle", name: "subtitle"}
               - {label: "Image", name: "image", widget: "image"}
+      - file: "src/pages/about/about.md"
+        label: "About"
+        name: "about"
+        delete: false
+        fields:
+          - {label: "Template Key", name: "templateKey", default: "about-page", widget: hidden}
+          - {label: "Path", name: "path", default: "/about", widget: hidden}
+      - file: "src/pages/marketing-stories/marketing-stories.md"
+        label: "Marketing Stories"
+        name: "marketing-stories"
+        delete: false
+        fields:
+          - {label: "Template Key", name: "templateKey", default: "marketing-stories-page", widget: hidden}
+          - {label: "Path", name: "path", default: "/marketing-stories", widget: hidden}      
+      - file: "src/pages/customer-stories/customer-stories.md"
+        label: "Customer Stories"
+        name: "customer-stories"
+        delete: false
+        fields:
+          - {label: "Template Key", name: "templateKey", default: "customer-stories-page", widget: hidden}
+          - {label: "Path", name: "path", default: "/customer-stories", widget: hidden}      
   - name: sections
     label: Sections
     files:
