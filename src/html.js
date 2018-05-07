@@ -42,8 +42,10 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src={withPrefix('/jquery-220.min.js')} type="text/javascript"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"/>
+          <script src="https://player.vimeo.com/api/player.js"></script>
           <script src={withPrefix('/webflow.js')} type="text/javascript"></script>
+          <script src={withPrefix('/webflow-custom.js')} type="text/javascript"></script>
         </body>
       </html>
     )
