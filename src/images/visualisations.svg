@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>visualisations</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Integration-Features" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-170.000000, -759.000000)">
+        <g id="visualisations" transform="translate(170.000000, 759.000000)">
+            <path d="M50,0 C77.614,0 100,22.386 100,50 C100,77.614 77.614,100 50,100 C22.386,100 0,77.614 0,50 C0,22.386 22.386,0 50,0 Z" id="Mask" fill="#EFF4FF"></path>
+            <rect id="Rectangle" fill="#A3B8E5" x="20" y="30" width="60" height="40" rx="2"></rect>
+            <rect id="Rectangle-4" fill="#EFF4FF" x="32" y="50" width="6" height="14"></rect>
+            <rect id="Rectangle-4-Copy-3" fill="#EFF4FF" x="62" y="50" width="6" height="14"></rect>
+            <rect id="Rectangle-4-Copy" fill="#EFF4FF" x="42" y="53" width="6" height="11"></rect>
+            <rect id="Rectangle-4-Copy-2" fill="#EFF4FF" x="52" y="46" width="6" height="18"></rect>
+            <rect id="Rectangle-2" fill="#6983C0" x="24" y="34" width="19" height="3" rx="1"></rect>
+        </g>
+    </g>
+</svg>

@@ -8,12 +8,12 @@ export const ProductPageTemplate = ({
       <div className="tint-container">
         <div className="flex-container center">
           <div id="closevid" className="close-popup"></div>
-          <div className="video-explanation w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/259289401" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
-          <div className="video-jermaine w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258466320" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
-          <div className="video-mito w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258466230" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
-          <div className="video-thu w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258466172" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
-          <div className="video-varun w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258465734" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
-          <div className="video-sacha w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258465627" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
+          <div className="video-explanation w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/259289401" frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe></div>
+          <div className="video-jermaine w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258466320" frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe></div>
+          <div className="video-mito w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258466230" frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe></div>
+          <div className="video-thu w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258466172" frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe></div>
+          <div className="video-varun w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258465734" frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe></div>
+          <div className="video-sacha w-embed w-iframe"><iframe id="embedvideo" src="https://player.vimeo.com/video/258465627" frameBorder="0" webkitallowfullscreen="" mozallowfullscreen="" allowFullScreen=""></iframe></div>
         </div>
       </div>
       <header className="main-header product">
@@ -200,7 +200,7 @@ export const ProductPageTemplate = ({
           <div className="md-spacing"></div>
           <a href="#" data-video-playback="video-jermaine" className="shadow-box videos w-inline-block">
             <div className="video-container">
-              <div className="overlay-video"></div><img src="images/thumb-jermaine.png" alt="Scheduling a report" width="350" srcset="images/thumb-jermaine-p-500.png 500w, images/thumb-jermaine.png 700w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 72vw, (max-width: 991px) 43vw, 31vw" className="video-thumb"/></div>
+              <div className="overlay-video"></div><img src="images/thumb-jermaine.png" alt="Scheduling a report" width="350" srcSet="images/thumb-jermaine-p-500.png 500w, images/thumb-jermaine.png 700w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 72vw, (max-width: 991px) 43vw, 31vw" className="video-thumb"/></div>
             <div className="platform-detail videos">
               <h6 className="h6">Scheduling a report</h6>
               <div className="sm-spacing"></div>
@@ -209,7 +209,7 @@ export const ProductPageTemplate = ({
           </a>
           <a href="#" data-video-playback="video-mito" className="shadow-box videos w-inline-block">
             <div className="video-container">
-              <div className="overlay-video"></div><img src="images/thumb-mito.jpg" alt="Managing &amp; inviting users" width="350" srcset="images/thumb-mito-p-500.jpeg 500w, images/thumb-mito.jpg 700w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 72vw, (max-width: 991px) 43vw, 31vw" className="video-thumb"/></div>
+              <div className="overlay-video"></div><img src="images/thumb-mito.jpg" alt="Managing &amp; inviting users" width="350" srcSet="images/thumb-mito-p-500.jpeg 500w, images/thumb-mito.jpg 700w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 72vw, (max-width: 991px) 43vw, 31vw" className="video-thumb"/></div>
             <div className="platform-detail videos">
               <h6 className="h6">Managing &amp; inviting users</h6>
               <div className="sm-spacing"></div>
@@ -219,7 +219,7 @@ export const ProductPageTemplate = ({
           <a href="#" data-video-playback="video-thu" className="shadow-box videos w-inline-block">
             <div className="video-container">
               <div className="overlay-video"></div>
-              <img src="images/thumb-thu.jpg" alt="Creating a one-click story" width="350" srcset="images/thumb-thu-p-500.jpeg 500w, images/thumb-thu.jpg 700w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 72vw, (max-width: 991px) 43vw, 31vw" className="video-thumb"/>
+              <img src="images/thumb-thu.jpg" alt="Creating a one-click story" width="350" srcSet="images/thumb-thu-p-500.jpeg 500w, images/thumb-thu.jpg 700w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 72vw, (max-width: 991px) 43vw, 31vw" className="video-thumb"/>
             </div>
             <div className="platform-detail videos">
               <h6 className="h6">Creating a one-click story</h6>

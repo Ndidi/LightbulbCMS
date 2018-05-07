@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>adwords</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Integration-Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1115.000000, -1693.000000)">
+        <g id="adwords" transform="translate(1013.000000, 1650.000000)">
+            <g transform="translate(102.000000, 43.000000)">
+                <path d="M40.7313694,53.9022162 L53.84014,53.9044054 L53.827029,53.8744865 L35.9254757,0.0554594595 L35.9254757,51.8516757 C37.1426094,53.1097297 38.8390214,53.9022162 40.7313694,53.9022162" id="Fill-1" fill="#0F9D59"></path>
+                <path d="M26.9204342,26.9416216 L34.4016913,49.4362703 C34.7323787,50.3659459 35.2597305,51.1715676 35.9189202,51.8538649 L35.9189202,0.0591081081 L26.9204342,26.9416216 Z" id="Fill-3" fill="#0A6E3D"></path>
+                <path d="M0.0131109558,53.8766757 L13.1087706,53.9044054 C14.9996618,53.9044054 16.698259,53.1155676 17.9168495,51.848027 C18.5738541,51.1679189 19.1012058,50.3622973 19.427523,49.4494054 C19.4297081,49.4406486 35.9036241,0 35.9036241,0 L17.9408862,0 L0.0131109558,53.8766757 Z" id="Fill-5" fill="#4284F4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>agencies-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-770.000000, -1219.000000)">
+        <g id="agencies-icon" transform="translate(770.000000, 1219.000000)" fill="#AEB1B5" fill-rule="nonzero">
+            <path d="M8,10 L8,6 L3,6 C1.8954305,6 1,6.8954305 1,8 C1,9.1045695 1.8954305,10 3,10 L8,10 Z M3,5 L9,5 L9,11 L3,11 C1.34314575,11 2.02906125e-16,9.65685425 0,8 C-2.02906125e-16,6.34314575 1.34314575,5 3,5 Z" id="Rectangle-58"></path>
+            <path d="M16,1.69951446 L9,5.58840335 L9,10.4115967 L16,14.3004855 L16,1.69951446 Z M8,5 L17,0 L17,16 L8,11 L8,5 Z" id="Rectangle-58-Copy"></path>
+            <path d="M17,6 C18.1045695,6 19,6.8954305 19,8 C19,9.1045695 18.1045695,10 17,10 L17,11 C18.6568542,11 20,9.65685425 20,8 C20,6.34314575 18.6568542,5 17,5 L17,6 Z" id="Oval"></path>
+            <path d="M6.11721778,11 L5,11 L5,12.8074176 L6.67703296,17 L6.86721778,17 L6.11721778,11 Z M4,10 L7,10 L8,18 L6,18 L4,13 L4,10 Z" id="Path-18"></path>
+        </g>
+    </g>
+</svg>

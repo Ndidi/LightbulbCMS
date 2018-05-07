@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>metrics</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Integration-Features" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-936.000000, -1257.000000)">
+        <g id="metrics" transform="translate(936.000000, 1257.000000)">
+            <path d="M0,50 C0,22.386 22.386,0 50,0 C77.614,0 100,22.386 100,50 C100,77.614 77.614,100 50,100 C22.386,100 0,77.614 0,50" id="Mask" fill="#EFF4FF"></path>
+            <rect id="Rectangle-6" fill="#A3B8E5" x="25" y="25" width="50" height="50" rx="2"></rect>
+            <polygon id="Path-19-Copy" fill="#6983C0" points="31 62.6777468 42 45 67.6777633 35 67.6777633 62.6777468"></polygon>
+            <polygon id="Path-19" fill="#EFF4FF" points="31 62.6777468 67.6777633 35 67.6777633 62.6777468"></polygon>
+            <circle id="Oval-21" fill="#A3B8E5" cx="57" cy="54" r="4"></circle>
+        </g>
+    </g>
+</svg>
