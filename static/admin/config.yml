@@ -93,13 +93,15 @@ collections:
             name: "imageText"
             widget: "object"
             fields:
+              - {label: "Title", name: "title"}
+              - {label: "Subtitle", name: "subtitle"}
               - {label: "Image", name: "image", widget: "image"}
-              - {label: "Text", name: "text", widget: "string"}
           - label: "Text and Image"
             name: "textImage"
             widget: "object"
             fields:
-              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Title", name: "title"}
+              - {label: "Subtitle", name: "subtitle"}
               - {label: "Image", name: "image", widget: "image"}
           - label: "Centered Content"
             name: "centeredContent"
@@ -112,7 +114,8 @@ collections:
             name: "2ndTextImage"
             widget: "object"
             fields:
-              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Title", name: "title"}
+              - {label: "Subtitle", name: "subtitle"}
               - {label: "Image", name: "image", widget: "image"}
           - label: "Theming"
             name: "theming"
