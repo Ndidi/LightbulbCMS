@@ -111,7 +111,7 @@ collections:
               - {label: "Subtitle", name: "subtitle"}
               - {label: "Image", name: "image", widget: "image"}
           - label: "2nd Text and Image"
-            name: "2ndTextImage"
+            name: "secondTextImage"
             widget: "object"
             fields:
               - {label: "Title", name: "title"}

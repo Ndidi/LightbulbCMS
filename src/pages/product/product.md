@@ -21,7 +21,7 @@ centeredContent:
   subtitle: >-
     Automated explanation of key trends in simple English ensures your audience
     can quickly connect the dots and gain real insights.
-2ndTextImage:
+secondTextImage:
   image: /assets/visualisation-tablet.png
   title: Best in class visualisations
   subtitle: >-
