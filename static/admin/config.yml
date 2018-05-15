@@ -8,11 +8,11 @@ public_folder: /assets
 collections:
   - name: pages
     label: Pages
+    delete: false
     files:
       - file: "src/pages/index/index.md"
         label: "Index"
         name: "index"
-        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "index-page", widget: hidden}
           - {label: "Path", name: "path", default: "/"}
@@ -58,7 +58,6 @@ collections:
       - file: "src/pages/data-storytelling/data-storytelling.md"
         label: "Data Storytelling"
         name: "dataStorytelling"
-        delete: false
         create: true
         fields:
           - {label: "Template Key", name: "templateKey", default: "data-storytelling-page", widget: hidden}
@@ -67,7 +66,6 @@ collections:
       - file: "src/pages/request-demo/request-demo.md"
         label: "Request Demo"
         name: "requestDemo"
-        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "request-demo-page", widget: hidden}
           - {label: "Path", name: "path", default: "/request-demo"}
@@ -78,7 +76,6 @@ collections:
       - file: "src/pages/thank-you/thank-you.md"
         label: "Thank You"
         name: "thankYou"
-        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "thank-you-page", widget: hidden}
           - {label: "Path", name: "path", default: "/thank-you", widget: hidden}
@@ -87,7 +84,6 @@ collections:
       - file: "src/pages/product/product.md"
         label: "Product"
         name: "product"
-        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "product-page", widget: hidden}
           - {label: "Path", name: "path", default: "/product", widget: hidden}
@@ -135,21 +131,18 @@ collections:
       - file: "src/pages/about/about.md"
         label: "About"
         name: "about"
-        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "about-page", widget: hidden}
           - {label: "Path", name: "path", default: "/about", widget: hidden}
       - file: "src/pages/marketing-stories/marketing-stories.md"
         label: "Marketing Stories"
         name: "marketing-stories"
-        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "marketing-stories-page", widget: hidden}
           - {label: "Path", name: "path", default: "/marketing-stories", widget: hidden}      
       - file: "src/pages/customer-stories/customer-stories.md"
         label: "Customer Stories"
         name: "customer-stories"
-        delete: false
         fields:
           - {label: "Template Key", name: "templateKey", default: "customer-stories-page", widget: hidden}
           - {label: "Path", name: "path", default: "/customer-stories", widget: hidden}      
