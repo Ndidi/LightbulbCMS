@@ -2,6 +2,7 @@ import React from "react";
 
 export const ProductPageTemplate = ({
   title,
+  subtitle
 }) => {
   return (
     <div>
@@ -18,9 +19,9 @@ export const ProductPageTemplate = ({
       </div>
       <header className="main-header product">
         <div className="container">
-          <div className="hero">A platform that unlocks the possibilities of your business data</div>
+          <div className="hero">{title}</div>
           <div className="sm-spacing"></div>
-          <div className="p center-align">Automated data analytics, visualisations, storytelling and sharing</div>
+          <div className="p center-align">{subtitle}</div>
         </div>
       </header>
       <section className="white-section feature">
@@ -79,7 +80,7 @@ export const ProductPageTemplate = ({
             <div className="w-slider-mask">
               <div className="slide-content w-slide">
                 <div className="center-wrapper">
-                  <a href="https://www.nugit.co/doubleclick-search" className="shadow-box integration w-inline-block">
+                  <a href="/doubleclick-search" className="shadow-box integration w-inline-block">
                     <div className="integration-color doubleclick"></div>
                     <div className="platform-detail integration">
                       <h6 className="h6">DoubleClick Search</h6>
@@ -90,7 +91,7 @@ export const ProductPageTemplate = ({
               </div>
               <div className="slide-content w-slide">
                 <div className="center-wrapper">
-                  <a href="integrations/google-analytics.html" className="shadow-box integration w-inline-block">
+                  <a href="/google-analytics" className="shadow-box integration w-inline-block">
                     <div className="integration-color google-analytics"></div>
                     <div className="platform-detail integration">
                       <h6 className="h6">Google Analytics 360</h6>
@@ -101,7 +102,7 @@ export const ProductPageTemplate = ({
               </div>
               <div className="slide-content w-slide">
                 <div className="center-wrapper">
-                  <a href="https://www.nugit.co/facebook-ads" className="shadow-box integration w-inline-block">
+                  <a href="/facebook-ads" className="shadow-box integration w-inline-block">
                     <div className="integration-color facebook"></div>
                     <div className="platform-detail integration">
                       <h6 className="h6">Facebook Ads</h6>
@@ -112,7 +113,7 @@ export const ProductPageTemplate = ({
               </div>
               <div className="slide-content w-slide">
                 <div className="center-wrapper">
-                  <a href="integrations/doubleclick-campaign-manager.html" className="shadow-box integration w-inline-block">
+                  <a href="/doubleclick-campaign-manager" className="shadow-box integration w-inline-block">
                     <div className="integration-color doubleclick"></div>
                     <div className="platform-detail integration">
                       <h6 className="h6">DoubleClick Campaign Manager</h6>
@@ -123,7 +124,7 @@ export const ProductPageTemplate = ({
               </div>
               <div className="slide-content w-slide">
                 <div className="center-wrapper">
-                  <a href="#" className="shadow-box integration w-inline-block">
+                  <a href="/sizmek" className="shadow-box integration w-inline-block">
                     <div className="integration-color sizmek"></div>
                     <div className="platform-detail integration">
                       <h6 className="h6">Sizmek</h6>
@@ -134,7 +135,7 @@ export const ProductPageTemplate = ({
               </div>
               <div className="slide-content w-slide">
                 <div className="center-wrapper">
-                  <a href="#" className="shadow-box integration w-inline-block">
+                  <a href="/instagram" className="shadow-box integration w-inline-block">
                     <div className="integration-color instagram"></div>
                     <div className="platform-detail integration">
                       <h6 className="h6">Instagram</h6>
@@ -145,7 +146,7 @@ export const ProductPageTemplate = ({
               </div>
               <div className="slide-content w-slide">
                 <div className="center-wrapper">
-                  <a href="#" className="shadow-box integration w-inline-block">
+                  <a href="/yahoo" className="shadow-box integration w-inline-block">
                     <div className="integration-color yahoo"></div>
                     <div className="platform-detail integration">
                       <h6 className="h6">Yahoo Gemini</h6>
@@ -156,7 +157,7 @@ export const ProductPageTemplate = ({
               </div>
               <div className="slide-content w-slide">
                 <div className="center-wrapper">
-                  <a href="integrations.html" className="shadow-box integration showmore w-inline-block">
+                  <a href="/integrations" className="shadow-box integration showmore w-inline-block">
                     <div className="link-text w-clearfix">
                       <div className="learn-more">Learn More</div>
                       <div className="arrow-right"></div>
@@ -301,6 +302,7 @@ export default ({ data }) => {
   return(
     <ProductPageTemplate
       title={frontmatter.title}
+      subtitle={frontmatter.subtitle}
     />
   )
 }
@@ -310,6 +312,7 @@ export const productPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        subtitle
       }
     }
   }

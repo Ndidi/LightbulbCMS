@@ -112,6 +112,27 @@ collections:
               - {label: "Title", name: "title"}
               - {label: "Subtitle", name: "subtitle"}
               - {label: "Image", name: "image", widget: "image"}
+          - label: "2nd Text and Image"
+            name: "2ndTextImage"
+            widget: "object"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Theming"
+            name: "theming"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "text", widget: "string"}
+              - {label: "SubTitle", name: "subtext", widget: "string"}
+              - {label: "LeftImage", name: "leftImage", widget: "image"}
+              - {label: "RightImage", name: "rightImage", widget: "image"}
+          - label: "Connecting Data"
+            name: "connectingData"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "text", widget: "string"}
+              - {label: "SubTitle", name: "subtext", widget: "string"}
+              
       - file: "src/pages/about/about.md"
         label: "About"
         name: "about"
