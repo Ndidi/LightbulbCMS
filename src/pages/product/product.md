@@ -28,17 +28,16 @@ secondTextImage:
     Present your business data in engaging formats that use natural language and
     infographic designs to bring information to life.
 theming:
-  leftImage: /assets/theme.png
-  rightImage: /assets/theme.png
-  subtext: >-
+  image: /assets/theme.png
+  title: Make Nugit yours with full customisation
+  subtitle: >-
     Tailor the data sources, colours, visualisations and story templates to your
     business requirements.
-  text: Make Nugit yours with full customisation
 connectingData:
-  subtext: >-
+  title: Connecting your data to Nugit is easy
+  subtitle: >-
     Add data from over 25 online platforms in a few clicks. Our powerful
     enterprise data features allow you to organise data into groups, manage
     access, and create cross channel segments in a delightful web interface.
-  text: Connecting your data to Nugit is easy
 ---
 

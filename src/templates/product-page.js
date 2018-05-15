@@ -2,7 +2,13 @@ import React from "react";
 
 export const ProductPageTemplate = ({
   title,
-  subtitle
+  subtitle,
+  imageText,
+  textImage,
+  centeredContent,
+  secondTextImage,
+  theming,
+  connectingData
 }) => {
   return (
     <div>
@@ -27,52 +33,52 @@ export const ProductPageTemplate = ({
       <section className="white-section feature">
         <div className="container flexright">
           <div>
-            <h2 className="h2 fixedwidth">Magazine style browsing of reports</h2>
+            <h2 className="h2 fixedwidth">{imageText.title}</h2>
             <div className="sm-spacing"></div>
-            <p className="p fixedwidth">Visual gallery of information that makes discovering insights enjoyable. Teams can explore, share, comment and customise stories effortlessly.</p>
+            <p className="p fixedwidth">{imageText.subtitle}</p>
           </div>
         </div>
         <div className="magazine left"></div>
       </section>
       <section className="white-section gray left-align">
         <div className="container">
-          <h2 className="h2 fixedwidth reduced">Say goodbye to data silos</h2>
+          <h2 className="h2 fixedwidth reduced">{textImage.title}</h2>
           <div className="sm-spacing"></div>
-          <p className="p fixedwidth">Combine data from multiple sources in an instant. Perfect for bringing together all your data spread across different platforms.</p>
+          <p className="p fixedwidth">{textImage.subtitle}</p>
         </div>
         <div className="multi-channel right"></div>
       </section>
       <section className="white-section">
         <div className="container center">
-          <h2 className="h2">Natural Language for clarity and context</h2>
+          <h2 className="h2">{centeredContent.title}</h2>
           <div className="sm-spacing"></div>
-          <p className="p center-align">Automated explanation of key trends in simple English ensures your audience can quickly connect the dots and gain real insights.</p>
+          <p className="p center-align">{centeredContent.subtitle}</p>
           <div className="md-spacing"></div>
           <div className="nlg-magnify"></div>
         </div>
       </section>
       <div className="white-section gray left-align visualisation">
         <div className="container">
-          <h2 className="h2 fixedwidth">Best in class visualisations</h2>
+          <h2 className="h2 fixedwidth">{secondTextImage.title}</h2>
           <div className="sm-spacing"></div>
-          <p className="p fixedwidth">Present your business data in engaging formats that use natural language and infographic designs to bring information to life.</p>
+          <p className="p fixedwidth">{secondTextImage.subtitle}</p>
         </div>
         <div className="nugit-list right"></div>
       </div>
       <section className="white-section theme">
         <div className="container center">
-          <h2 className="h2">Make Nugit yours with full customisation</h2>
+          <h2 className="h2">{theming.title}</h2>
           <div className="sm-spacing"></div>
-          <p className="p center-align whiter">Tailor the data sources, colours, visualisations and story templates to your business requirements.</p>
+          <p className="p center-align whiter">{theming.subtitle}</p>
           <div className="md-spacing"></div>
           <div className="theme-tool"></div>
         </div>
       </section>
       <section id="integration" className="white-section centered">
         <div className="container center">
-          <h2 className="h2">Connecting your data to Nugit is easy</h2>
+          <h2 className="h2">{connectingData.title}</h2>
           <div className="sm-spacing"></div>
-          <p className="p center-align">Add data from over 25 online platforms in a few clicks. Our powerful enterprise data features allow you to organise data into groups, manage access, and create cross channel segments in a delightful web interface.</p>
+          <p className="p center-align">{connectingData.subtitle}</p>
           <div className="md-spacing"></div>
         </div>
         <div className="container grid">
@@ -303,6 +309,12 @@ export default ({ data }) => {
     <ProductPageTemplate
       title={frontmatter.title}
       subtitle={frontmatter.subtitle}
+      imageText={frontmatter.imageText}
+      textImage={frontmatter.textImage}
+      centeredContent={frontmatter.centeredContent}
+      secondTextImage={frontmatter.secondTextImage}
+      theming={frontmatter.theming}
+      connectingData={frontmatter.connectingData}
     />
   )
 }
@@ -313,6 +325,35 @@ export const productPageQuery = graphql`
       frontmatter {
         title
         subtitle
+        imageText{
+          title
+          subtitle
+          image
+        }
+        textImage{
+          title
+          subtitle
+          image
+        }
+        centeredContent{
+          title
+          subtitle
+          image
+        }
+        secondTextImage{
+          title
+          subtitle
+          image
+        }
+        theming{
+          title
+          subtitle
+          image
+        }
+        connectingData{
+          title
+          subtitle
+        }
       }
     }
   }

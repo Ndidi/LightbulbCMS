@@ -121,10 +121,9 @@ collections:
             name: "theming"
             widget: "object"
             fields:
-              - {label: "Title", name: "text", widget: "string"}
-              - {label: "SubTitle", name: "subtext", widget: "string"}
-              - {label: "LeftImage", name: "leftImage", widget: "image"}
-              - {label: "RightImage", name: "rightImage", widget: "image"}
+              - {label: "Title", name: "title"}
+              - {label: "Subtitle", name: "subtitle"}
+              - {label: "Image", name: "image", widget: "image"}
           - label: "Connecting Data"
             name: "connectingData"
             widget: "object"
