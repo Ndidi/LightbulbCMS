@@ -132,7 +132,6 @@ collections:
             fields:
               - {label: "Title", name: "text", widget: "string"}
               - {label: "SubTitle", name: "subtext", widget: "string"}
-              
       - file: "src/pages/about/about.md"
         label: "About"
         name: "about"
